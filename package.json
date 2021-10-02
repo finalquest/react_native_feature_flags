@@ -1,0 +1,45 @@
+{
+  "name": "react-feature-flags",
+  "version": "0.2.1",
+  "description": "feature flags check for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint . && jest"
+  },
+  "author": "Alejandro Weichandt",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^22.1.4",
+    "react-dom": "^16.2.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.3.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./enzime.config.js",
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "unmockedModulePathPatterns": [
+      "node_modules/react/",
+      "node_modules/enzyme/"
+    ],
+    "testURL": "http://localhost/"
+  }
+}
